@@ -65,8 +65,115 @@ h1, h2, h3, h4, h5 {
 }
 
 /* Your code starts here! */
+@media (max-width: 800px) {
+    .container {
+       width: 800px;
+       margin: 0 auto;
+       padding: 20px 1%;
+    }
+    .container .top-nav-bar {
+        display: flex;
+        padding: 5%;
+    }
+    .container .top-nav-bar a:link {
+        width: 100%;
+        color: black;
+        text-decoration: none;
+        padding: 3%;
+    }
+    #header-img {
+        display: none;
+    }
+    .container .top-content {
+        display: flex;
+        width: 100%;
+        flex-direction: column;
+        text-align: center;
+    }
+    .top-content .firstcolumn button {
+        display: flex;
+        width: 30%;
+        text-align:
+    }
+}
 
-h1{
+@media (max-width: 500px){
+    .container { 
+       width: 500px;
+    }
+    .container .top-nav-bar {
+        display: flex;
+        flex-direction: column-reverse;
+        padding: 5%;
+    }
+    .container .top-nav-bar a:link {
+        width: 100%;
+        color: black;
+        text-decoration: none;
+        padding: 3%;
+        border-top: 1px solid gray;
+        border-bottom: 1px solid gray;
+        text-align: center;
+    }
+    #header-img {
+        display: none;
+    }
+    .container .top-content {
+        display: flex;
+        width: 100%;
+        flex-direction: column;
+        text-align: center;
+    }
+    .top-content .firstcolumn button {
+        display: flex;
+        width: 30%;
+        text-align:
+    }
+    .middle-content h2 {
+        padding: 10px 2%;
+        margin: 0;
+    }
+    .middle-content .row {
+        display: flex;
+        flex-direction: column;
+        text-align: left;
+        width: 100%;
+    }
+    .middle-img{
+        display: flex;
+        width: 100%;
+    }        
+    .container .top-content {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    text-align: center;
+    }
+    .container .bottom-content {
+        display: flex;
+        width: 100%;
+        flex-direction: column;
+        text-align: center;
+    }
+    .bottom-content .row {
+        display: flex;
+        flex-direction: column;
+        text-align: left;
+        width: 100%;
+    }
+    .bottom-content h2 {
+        padding: 10px 2%;
+        margin: 0;
+    }
+    #contact h2 {
+        display: flex;
+        justify-content: left;
+        margin: 0% auto;
+        width: 100%;
+    }
+}
+
+h1 {
 	font-size: 80px;
 	display: block;
 	padding: 50% auto;
@@ -74,7 +181,7 @@ h1{
 	width: 80%;
 }
 
-h2{
+h2 {
 	font-size: 20px;
 	display: block;
 	padding: 50% auto;
@@ -87,7 +194,7 @@ h2{
 .top-nav-bar {
     display: flex;
     justify-content: space-between;
-    width: 900px;
+    width: 100%;
     margin: 0 auto;
     padding: 2%;
     align-items: center;
@@ -97,11 +204,11 @@ h2{
 	text-decoration: none;
 	padding: 2% auto;
 }
-.container{
-   width: 900px;
+.container {
+   width: 80%;
    margin: 0 auto; 
 }
-.column .button{
+button {
 	-webkit-transition-duration: 0.4s;
 	transition-duration: 0.4s;
 	width: 20%;	
@@ -109,24 +216,24 @@ h2{
 	margin: 0px;
 	box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19)
 }
-.button:hover{
+button:hover {
 	background-color:red;
 	color: white;
 	box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
 }
 
-.topcontent{
-	display: flex;
+.top-content {
+    display: flex;
+    width: 100%;
 	margin: 0% auto;
 	border-bottom: 3px solid red;
 }
 .middle-content {
     margin-bottom: 20px;
-    border-bottom: 1px dashed black;
 }
 
 .middle-content h2 {
-    padding: 0 2%;
+    padding: 12px 2%;
     margin-bottom: 0;
 }
 
@@ -149,13 +256,20 @@ h2{
   
 .column {
 	flex: 100%;
-	margin: 10px 30px 10px 10px;
+	margin: 10px 10px 10px 10px;
 	padding: 0px;
 	width: 100%;
 	text-align: left;
 }
-
-#bodyimage{
+.firstcolumn {
+    display: flex;
+	flex-direction: column;
+	margin: 1%;
+	padding: 0px 20px 0px 0px;
+	width: 100%;
+    align-items: center;
+}
+.middle-img{
 	width: 100%;
 	margin: 10px;
 	padding: 10px;
@@ -163,7 +277,7 @@ h2{
 
 #contact{
 	text-align: left;
-	width: 75%;
+	width: 100%;
 	margin: 10px;
 	padding: 10px;
 	border-top: 3px solid red;
@@ -171,8 +285,6 @@ h2{
 
 .copyright{
 	text-align: center;
-	width: 75%;
-	margin-left: 75px;
-	padding-left: 50px;
+	width: 100%;
 }
 
